@@ -1,0 +1,378 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Regression-AllModules" verbose="1" parallel="tests" thread-count="18">
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+
+    </listeners>
+
+    <!--    <test name="Smoke Tests">-->
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="payments"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+    <!--        <classes>-->
+    <!--            <class name="com.rentacenter.racpad.tests.LoginPageTest">-->
+    <!--            </class>-->
+    <!--            <class name="com.rentacenter.racpad.tests.AccountManagementTests">-->
+    <!--            </class>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+    <test name="Payment Tests-Edit schedule payments">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.Payment.EditSchedulePaymentTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Payment Tests-Search payments">
+
+        <classes>
+            <class name="com.rentacenter.racpad.tests.Payment.PaymentSearchPageTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Payment Tests- Takepayment">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.Payment.TakePaymentTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Payment Tests- EPO payments">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.Payment.EPOPaymentTests">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Payment Tests-regular payments">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.Payment.PaymentDifferentTenderTypesTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Payment Tests-reversed payments">
+
+        <classes>
+            <class name="com.rentacenter.racpad.tests.Payment.ReversePaymentsTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Payment Tests- free time payments">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.Payment.FreeTimePaymentsTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Payment Tests- past due payments">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.Payment.PastDueCustomersPaymentsTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Payment Tests- PaymentsDifferentCombinations">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.Payment.PaymentsDifferentCombinations">
+            </class>
+        </classes>
+    </test>
+    <test name="Payment Tests- payments">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.Payment.OtherIncometest">
+            </class>
+        </classes>
+    </test>
+
+    <!--    <test name="AccountManagement Tests-past due tests">-->
+    <!--        <classes>-->
+    <!--            <class name="com.rentacenter.racpad.tests.accountmanagement.PastDueListTests">-->
+    <!--            </class>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <test name="Agreement Tests-Agreement Page Test">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.agreement.AgreementPageTest"/>
+        </classes>
+    </test>
+
+    <test name="AgreementChargeOffTest">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.agreement.AgreementChargeOffTest">
+            </class>
+        </classes>
+    </test>
+
+
+    <test name="Agreement Tests-CreateAgreement for ExistingCustTest">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.agreement.CreateAgreementUsingExistingCustTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Agreement Tests-Create Agreement Using Existing Customer">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.agreement.CreateAgreementUsingExistingCustTestSAI">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Inventory Tests-Inventory Charge Off Test">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.inventory.InventoryChargeOffTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Inventory Tests-Inventory search ">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.inventory.InventorySearchPageTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Inventory Tests-Inventory Status Change Test">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.inventory.InventoryStatusChangeTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Inventory Tests-Manual PO Create Test">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.inventory.ManualPOCreateTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Inventory Tests-New Package Item Search Test">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.inventory.NewPackageItemSearchTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Inventory Tests-Print Edit Price Tags Test">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.inventory.PrintEditPriceTagsTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Customer Tests-Create Customer Test">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.customer.CreateCustomerTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Customer Tests-Customer Page Test">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.customer.CustomerPageTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="Cash Management Tests">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.CashManagment.CashManagmentTests"/>
+        </classes>
+    </test>
+
+    <test name="Account Management Tests">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.AccountManagementTests"/>
+        </classes>
+    </test>
+
+    <test name="Account Management Tests -AMActivityLog">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.accountmanagement.AMActivityLog"/>
+        </classes>
+    </test>
+
+    <test name="Account Management Tests -PastDueListTests">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.accountmanagement.PastDueListTests"/>
+        </classes>
+    </test>
+
+
+    <test name="DAPCustomerEventTest">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.dapEvents.DAPCustomerEventTest"/>
+        </classes>
+    </test>
+
+    <test name="DAPEventTaskTest">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.dapEvents.DAPEventTaskTest"/>
+        </classes>
+    </test>
+
+    <test name="DAPStoreEventTest">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.dapEvents.DAPStoreEventTest"/>
+        </classes>
+    </test>
+
+    <test name="EditCustomerRouteSLA">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.SLA.EditCustomerRouteSLA"/>
+        </classes>
+    </test>
+
+    <test name="HoldAndUnHoldInventorySLA">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.SLA.HoldAndUnHoldInventorySLA"/>
+        </classes>
+    </test>
+
+    <test name="InventoryChargeOffTest">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.SLA.InventoryChargeOffTest"/>
+        </classes>
+    </test>
+
+    <test name="rateDeductionSLA">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.SLA.rateDeductionSLA"/>
+        </classes>
+    </test>
+
+    <test name="SLATest">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.SLA.SLATest"/>
+        </classes>
+    </test>
+
+    <test name="AgreementTest-Package Agr">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.agreement.PackageAgreementsDocSignTest"/>
+        </classes>
+    </test>
+
+    <test name="AgreementTest-Transfer Agr">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.agreement.TransferAgreementSLATest"/>
+        </classes>
+    </test>
+
+    <test name="AgreementTest-Reinstatement Agr">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.agreement.AgreementReinstatementTest"/>
+        </classes>
+    </test>
+
+    <test name="AgreementTest-EPP Agr">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.agreement.EPPAgreementTest"/>
+        </classes>
+    </test>
+    <test name="AgreementChargeOffTest -two">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.agreement.AgreementChargeOffTest2">
+            </class>
+        </classes>
+    </test>
+
+    <test name="AgreementSwitchOutTest">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.agreement.AgreementSwitchOutTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="LoanerAgreementTest">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.agreement.LoanerAgreementTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="AgreementReinstatementTest">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.agreement.AgreementReinstatementTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="MultipleAgreementsSameStoreTest">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.agreement.MultipleAgreementsSameStoreTest">
+            </class>
+        </classes>
+    </test>
+
+
+    <test name="MultipleStoreAgreementsTest">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.agreement.MultipleStoreAgreementsTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="PackageAgreementsDocSignTest">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.agreement.PackageAgreementsDocSignTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="ReturnAgremeentTest">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.agreement.ReturnAgremeentTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="RTOAgreementsDocSignTest">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.agreement.RTOAgreementsDocSignTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="RemoveAmountDueandSetdefaultTest">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.Payment.RemoveAmountDueAndDefaultTest">
+            </class>
+        </classes>
+    </test>
+
+    <test name="AgreementSplitTest">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.agreement.AgreementSplitTest"/>
+        </classes>
+    </test>
+
+    <test name="MultipleAgreementsTest">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.agreement.MultipleAgreementsTest"/>
+        </classes>
+    </test>
+
+    <test name="Customer2Delivery">
+        <classes>
+            <class name="com.rentacenter.racpad.tests.e2e.Customer2Delivery"/>
+        </classes>
+    </test>
+
+
+<test name="ReportsTest">
+<classes>
+    <class name="com.rentacenter.racpad.tests.Reports.ReportingTest">
+    </class>
+</classes>
+</test>
+
+</suite>

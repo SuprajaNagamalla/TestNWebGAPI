@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.rentacenter.racpad</groupId>
+        <artifactId>rac_pad</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>rac_pad_db</artifactId>
+    <packaging>jar</packaging>
+    <dependencies>
+
+        <dependency>
+            <groupId>com.rentacenter.racpad</groupId>
+            <artifactId>rac_pad_commons</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!-- Apache POI - Core for handling .xls/.xlsx structure -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>${poi.db.version}</version>
+        </dependency>
+
+        <!-- Apache POI - OOXML for .xlsx support (XSSF classes) -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>${poi.db.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.networknt</groupId>
+            <artifactId>json-schema-validator</artifactId>
+            <version>${json.schema.validator.version}</version>
+        </dependency>
+
+    </dependencies>
+
+
+</project>

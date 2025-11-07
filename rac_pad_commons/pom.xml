@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.rentacenter.racpad</groupId>
+        <artifactId>rac_pad</artifactId>
+        <version>1.0-SNAPSHOT</version>
+</parent>
+
+    <artifactId>rac_pad_commons</artifactId>
+    <packaging>jar</packaging>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+      <dependencies>
+          <dependency>
+              <groupId>com.rentacenter.racpad</groupId>
+              <artifactId>rac_pad_secure</artifactId>
+              <version>${project.version}</version>
+          </dependency>
+
+          <!-- AWS SDK dependencies required for S3 utilities -->
+          <dependency>
+              <groupId>software.amazon.awssdk</groupId>
+              <artifactId>s3</artifactId>
+              <version>${aws.sdk.version}</version>
+          </dependency>
+          <dependency>
+              <groupId>software.amazon.awssdk</groupId>
+              <artifactId>apache-client</artifactId>
+              <version>${aws.sdk.version}</version>
+          </dependency>
+          <dependency>
+              <groupId>software.amazon.awssdk</groupId>
+              <artifactId>utils</artifactId>
+              <version>${aws.sdk.version}</version>
+          </dependency>
+          <dependency>
+              <groupId>software.amazon.awssdk</groupId>
+              <artifactId>sts</artifactId>
+              <version>${aws.sdk.version}</version>
+          </dependency>
+      </dependencies>
+
+
+
+</project>
